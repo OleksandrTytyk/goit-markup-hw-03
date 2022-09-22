@@ -13,6 +13,23 @@
   overflow: hidden;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
 :root {
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
@@ -28,12 +45,6 @@
   --button-bcg-color: #f5f4fa;
 }
 
-body {
-  color: var(--primary-text-color);
-  background-color: var(--primary-font-color);
-  font-family: Roboto, sans-serif;
-}
-
 .link {
   text-decoration: none;
 }
@@ -47,7 +58,13 @@ body {
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
-  outline: 2px solid  tomato;
+  outline: 2px solid tomato;
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-font-color);
+  font-family: Roboto, sans-serif;
 }
 
 /* Хедер */
@@ -77,7 +94,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--secondary-text-color)
+  color: var(--secondary-text-color);
 }
 
 .header-link:hover,
@@ -106,6 +123,8 @@ body {
 .hero {
   background-color: var(--secondary-font-color);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -116,6 +135,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-text-color);
+  margin-bottom: 30px;
 }
 
 .hero-btn {
@@ -129,6 +149,10 @@ body {
   cursor: pointer;
   border-color: transparent;
   border-radius: 4px;
+  padding: 10px 32px;
+  display: inline-block;
+  min-width: 216px;
+  text-align: center;
 }
 
 .hero-btn:hover,
@@ -137,12 +161,17 @@ body {
 }
 
 /* Особливості */
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .features-title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
+  margin-bottom: 10px;
 }
 
 .features-text {
@@ -152,21 +181,32 @@ body {
 }
 
 /* Чим ми займаємося */
+.description {
+  padding-bottom: 94px;
+  background-color: tomato;
+}
 .description-title {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  margin-bottom: 50px;
 }
 
 /* Наша команда */
 .team {
   background-color: var(--section-font-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-item {
   background-color: var(--primary-font-color);
+}
+
+.team-img {
+  margin-bottom: 30px;
 }
 
 .team-title {
@@ -175,7 +215,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  
+  margin-bottom: 50px;
 }
 
 .team-subtitle {
@@ -184,6 +224,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  margin-bottom: 10px;
 }
 
 .team-text {
@@ -203,6 +244,11 @@ body {
   cursor: pointer;
   border-color: transparent;
   border-radius: 4px;
+  padding: 6px 22px;
+}
+
+.filter-btn.first {
+  padding: 6px 25px;
 }
 
 .filter-btn:hover,
@@ -212,12 +258,25 @@ body {
 }
 
 /* Проекти */
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.project-item {
+  border: 1px solid #EEEEEE;
+}
+
+.project-img {
+margin-bottom: 20px;
+}
 
 .project-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
+  margin-bottom: 4px;
 }
 
 .project-text {
@@ -225,11 +284,15 @@ body {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-bottom: 20px;
+  display: inline-block;
 }
 
 /* Підвал */
 .footer {
   background-color: var(--secondary-font-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo-footer {
@@ -238,6 +301,8 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--white-text-color);
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .map {
@@ -245,6 +310,12 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--white-text-color);
+  display: inline-block;
+  margin-bottom: 9px;
+}
+
+.footer-mail {
+  margin-bottom: 9px;
 }
 
 .footer-mail,
@@ -252,6 +323,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  display: inline-block;
   color: var(--transparent-white-color);
 }
 
