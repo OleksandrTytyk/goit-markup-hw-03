@@ -23,8 +23,7 @@ p {
   margin: 0;
 }
 
-ul,
-ol {
+ul {
   margin: 0;
   padding-left: 0;
   list-style: none;
@@ -59,6 +58,11 @@ ol {
   padding-left: 15px;
   margin: 0 auto;
   outline: 2px solid tomato;
+}
+
+.section{
+padding-top: 94px;
+padding-bottom: 94px;
 }
 
 body {
@@ -120,7 +124,7 @@ body {
 }
 
 /* Герой */
-.hero {
+.section.hero {
   background-color: var(--secondary-font-color);
   text-align: center;
   padding-top: 200px;
@@ -161,10 +165,7 @@ body {
 }
 
 /* Особливості */
-.features {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 .features-title {
   font-size: 14px;
   line-height: 1.14;
@@ -181,10 +182,7 @@ body {
 }
 
 /* Чим ми займаємося */
-.description {
-  padding-bottom: 94px;
-  background-color: tomato;
-}
+
 .description-title {
   font-size: 36px;
   line-height: 1.16;
@@ -195,10 +193,8 @@ body {
 }
 
 /* Наша команда */
-.team {
+.section.team {
   background-color: var(--section-font-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .team-item {
@@ -258,14 +254,6 @@ body {
 }
 
 /* Проекти */
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.project-item {
-  border: 1px solid #EEEEEE;
-}
 
 .project-img {
 margin-bottom: 20px;
