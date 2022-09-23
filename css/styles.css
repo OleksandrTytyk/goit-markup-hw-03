@@ -50,6 +50,7 @@ img {
   --hero-button-hover: #188ce8;
   --button-bcg-color: #f5f4fa;
   --border-line: #ececec;
+  --border-portfolio: #EEEEEE;
   --card-set-gap: 30px;
 }
 
@@ -66,7 +67,7 @@ img {
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 .section {
@@ -369,17 +370,19 @@ body {
   margin-bottom: calc(-1 * var(--card-set-gap));
 }
 
+.title-text {
+  padding: 20px 24px;
+  
+  border-right: 1px solid var(--border-portfolio);
+  border-bottom: 1px solid var(--border-portfolio);
+  border-left: 1px solid var(--border-portfolio);
+}
+
 
 .project-item {
   flex-basis: calc(100% / 3 - 30px);
   margin-right: var(--card-set-gap);
   margin-bottom: var(--card-set-gap);
-
-}
-
-.project-img {
-  margin-bottom: 20px;
-  
 
 }
 
@@ -398,8 +401,8 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 
-  margin-bottom: 20px;
-  display: inline-block;
+  /* margin-bottom: 20px; */
+  /* display: inline-block; */
 }
 
 /* Підвал */
