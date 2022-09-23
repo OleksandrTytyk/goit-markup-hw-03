@@ -32,6 +32,8 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 :root {
@@ -47,7 +49,8 @@ img {
   --accent-color: #2196f3;
   --hero-button-hover: #188ce8;
   --button-bcg-color: #f5f4fa;
-  --border-line: #ECECEC;
+  --border-line: #ececec;
+  --card-set-gap: 30px;
 }
 
 .link {
@@ -63,7 +66,7 @@ img {
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
 }
 
 .section {
@@ -320,6 +323,17 @@ body {
 }
 
 /* Фільтри */
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .filter-btn {
   font-family: inherit;
   font-weight: 500;
@@ -346,8 +360,27 @@ body {
 
 /* Проекти */
 
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-right: calc(-1 * var(--card-set-gap));
+  margin-bottom: calc(-1 * var(--card-set-gap));
+}
+
+
+.project-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-right: var(--card-set-gap);
+  margin-bottom: var(--card-set-gap);
+
+}
+
 .project-img {
   margin-bottom: 20px;
+  
+
 }
 
 .project-title {
